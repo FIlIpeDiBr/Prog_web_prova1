@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Ursinhos Carinhosos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+      <script>
+          var x = "";
+          function getLocation() {
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+              x = "O seu navegador não suporta Geolocalização.";
+            }
+          }
+          function showPosition(position) {
+            x = position.coords.latitude + ", " + position.coords.longitude;
+          }
+          function regContato()
+            {
+                localStorage.setItem(nome.value, email.value + "; " + telefone.value + "; " + assunto.value + "; " + mensagem.value + "; " + x);
+            }
+        </script>
+  </head>
+  <body>
+    <header>
+      <h1>Ursinhos Carinhosos</h1>
+    </header>
+    <nav class="navbar">
+      <a href="/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="/Produtos.html"><i class="fa fa-fw fa-search"></i> Produtos</a>
+      <a href="/cadastro.html"><i class="fa fa-fw fa-user"></i> Cadastro</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contato</a>
+    </nav>
+    <nav class="form">
+      <div class="localiza">
+        <label for="loca"> Habilitar localização: </label>
+        <button id="loca" class="local" onclick="getLocation()">Local</button>
+      </div>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" />
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto"/>
+        <label for="mensagem">Mensagem:</label>
+        <input type="text" id="mensagem" />
+        <button onclick="regContato()">Enviar</button>
+      </form>
+    </nav>
+    <footer>
+      <div class="end">
+        <i class="fa fa-globe"> Armindo Auzier, 415</i>
+        <p>Itacoatiara-Amazonas</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+  }
+
+  .navbar a {
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  .form {
+    margin: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .localiza {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+
+  input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  select {
+    border: 2px solid black;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  button {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .local {
+    width: 320px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+  }
+
+  .end {
+    font-size: 1.3rem;
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: center;
+  }
+</style>

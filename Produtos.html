@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Ursinhos Carinhosos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Ursinhos Carinhosos</h1>
+    </header>
+    <nav class="navbar">
+      <a href="/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i> Produtos</a>
+      <a href="/cadastro.html"><i class="fa fa-fw fa-user"></i> Cadastro</a>
+      <a href="/contato.html"><i class="fa fa-fw fa-envelope"></i> Contato</a>
+    </nav>
+    <section class="parent">
+      <section class="images">
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833178078462052/images.png"
+          />
+          <p>Urso Azul</p>
+          <p>R$ 23,99</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833178674040862/download_2.png"
+          />
+          <p>Urso Marrom</p>
+          <p>R$ 27,99</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833180691501126/images_2.png"
+          />
+          <p>Urso Arco Íris</p>
+          <p>R$ 29,99</p>
+        </div>
+      </section>
+      <section class="images">
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833180041396314/download.png"
+          />
+          <p>Urso Branco</p>
+          <p>R$ 30,00</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833180355952650/images_1.png"
+          />
+          <p>Urso de Chapéu</p>
+          <p>R$ 25,99</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833179298988042/download_4.png"
+          />
+          <p>Urso de Ouro</p>
+          <p>R$ 35,99</p>
+        </div>
+      </section>
+      <section class="images">
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833178992820295/download_3.png"
+          />
+          <p>Urso Cinza</p>
+          <p>R$ 24,99</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833180989308928/images_3.png"
+          />
+          <p>Urso Feio</p>
+          <p>R$ 99,99</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://cdn.discordapp.com/attachments/967603657266843718/999833178367852615/download_1.png"
+          />
+          <p>Outro Urso Marrom</p>
+          <p>R$ 15,99</p>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="end">
+        <i class="fa fa-globe"> Armindo Auzier, 415</i>
+        <p>Itacoatiara-Amazonas</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+  }
+
+  .navbar a {
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  img {
+    width: 200px;
+    height: 220px;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #555;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px;
+    grid-area: "image";
+  }
+
+  .image:hover {
+    box-shadow: 0 0 20px rgb(122, 206, 234);
+  }
+
+  footer {
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .end {
+    font-size: 1.3rem;
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: center;
+  }
+</style>
